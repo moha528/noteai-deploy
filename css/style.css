@@ -1,0 +1,231 @@
+@import url('https://fonts.cdnfonts.com/css/robert-sans');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Robert Sans',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body{
+    overflow-x: hidden;
+}
+
+img{
+    border-radius: 6px;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    outline: none;
+}
+
+main{
+    scroll-snap-type: y mandatory;
+}
+
+.main-section{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+}
+
+.main-section:not(:first-child){
+    padding-top: 60px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 90px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+nav button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+nav button:last-child{
+    text-decoration: underline;
+}
+
+nav button:last-child:hover{
+    text-decoration: none;
+}
+
+nav button:first-child:hover{
+    text-decoration: underline;
+}
+
+#greenline{
+    position: absolute;
+    background: rgb(112, 255, 119);
+    width: 100%;
+    height: 6px;
+    top: 0;
+    left: 0;
+}
+
+#firstsectioncontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    align-items: center;
+    padding-top: 60px;
+
+}
+
+#upperlayer{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#upperlayer > div{
+    display: flex;
+    gap: 20px;
+}
+
+#upperlayer > div div{
+    max-width: 550px;
+}
+
+#upperlayer > div h3{
+    text-align: center;
+    margin: 5px 0;
+}
+
+#upperlayer > div p{
+    text-align: center;
+}
+
+#lowerlayer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: flex-end;
+}
+
+#lowerlayer h1{
+    font-size: 224px;
+    font-weight: normal;
+}
+
+#lowerlayer h2{
+    font-size: 68px;
+    font-weight: normal;
+}
+
+#lowerlayer div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#lowerlayer div button{
+    padding: 20px;
+    border-radius: 999px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+}
+
+#lowerlayer div button:first-child{
+    color: white;
+    background: black;
+}
+
+#lowerlayer div button:last-child{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+#bannersection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bannersection img{
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+}
+
+#tribannersection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#tribannersection img{
+    width: 25%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#slidersection1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slidersection1 img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+#description {
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+#description div{
+    display: flex;
+}
+
+#description ul{
+    width: 40%;
+    font-size: 40px;
+}
+
+#description h1{
+    width: 60%;
+    font-size: 40px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+#seconditem > div{
+    height: 80%;
+}
+
+#seconditem button{
+    padding: 20px;
+    border-radius: 999px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+}
